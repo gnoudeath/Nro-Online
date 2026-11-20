@@ -1,0 +1,19 @@
+# ===== File sinh ra khi build / chạy - KHONG dua len Git =====
+
+# Maven build (tao lai bang: mvn package)
+target/
+
+# IntelliJ / NetBeans
+.idea/
+*.iml
+nbactions.xml
+
+# Log sap JVM
+hs_err_pid*.log
+
+# File nen
+*.rar
+
+# Log cua server: giu thu muc log/ (server can de ghi file) nhung bo noi dung
+log/*
+!log/.gitkeep
