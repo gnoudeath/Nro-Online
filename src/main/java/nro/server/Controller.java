@@ -910,7 +910,7 @@ public class Controller {
 
 
     public void login2(Session session, Message msg) {
-        Service.getInstance().sendThongBaoOK(session, "Vui lòng đăng ký tài khoản tại https://nrofree2025.online/");
+        Service.getInstance().sendThongBaoOK(session, "Vui lòng đăng ký tài khoản tại " + Manager.DOMAIN);
     }
 
     public void sendInfo(Session session) {

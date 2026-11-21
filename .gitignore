@@ -17,3 +17,6 @@ hs_err_pid*.log
 # Log cua server: giu thu muc log/ (server can de ghi file) nhung bo noi dung
 log/*
 !log/.gitkeep
+
+# File cấu hình IDE riêng
+Arriety.xml

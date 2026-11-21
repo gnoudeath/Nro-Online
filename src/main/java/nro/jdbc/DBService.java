@@ -13,11 +13,11 @@ public class DBService {
     // link raw git https://raw.githubusercontent.com/tuantomo97/game-config/refs/heads/main/gateway321.txt
     public static String DRIVER = "com.mysql.cj.jdbc.Driver";
     public static String URL = "jdbc:#0://#1:#2/#3";
-    public static String DB_HOST = "gatewayhashirama.nroacademy.online";
+    public static String DB_HOST = "localhost";
     public static int DB_PORT = 3306;
-    public static String DB_NAME = "hashirama";
+    public static String DB_NAME = "nro-d";
     public static String DB_USER = "root";
-    public static String DB_PASSWORD = "cdmnopqHIJKLMNOPQR@STUVWXYrstuEF@GZabxyz";
+    public static String DB_PASSWORD = "";
     public static int MAX_CONN = 2;
     private static final Connection[] connections = new Connection[10];
 
