@@ -271,7 +271,7 @@ public class Service {
             String memory = decimalFormat.format(memoryUsage);
 
             if (text.equals("admin")) {
-                String str = "|7|--Ngọc Rồng Hashirama--" + "\n"
+                String str = "|7|--" + Manager.SERVER_NAME + "--" + "\n"
                         + "|4|Sessions: " + (Client.gI().getSessions().size() + soluongBot) + "\n"
                         + "|5|Tổng Thread: " + Thread.activeCount() + "\n"
                         + "|6|Số người Online:  " + (Client.gI().getPlayers().size() + soluongBot) + "\n"
@@ -287,7 +287,7 @@ public class Service {
                 sendThongBao(player, "Tọa độ\n" + player.location.x + " - " + player.location.y);
                 return;
             }  else if (text.equals("load")) {
-                String str = "|7|--Ngọc Rồng Hashirama--" + "\n"
+                String str = "|7|--" + Manager.SERVER_NAME + "--" + "\n"
                         + "|4|Sessions: " + (Client.gI().getSessions().size() + soluongBot) + "\n"
                         + "|5|Tổng Thread: " + Thread.activeCount() + "\n"
                         + "|6|Số người Online:  " + (Client.gI().getPlayers().size() + soluongBot) + "\n"

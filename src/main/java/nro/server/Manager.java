@@ -95,8 +95,8 @@ public class Manager {
     public static int TILE_NCAP = 0;
     public static int EVENT_SEVER = 6;
     public static byte SUKIEN = 6;
-    public static String DOMAIN = "https://nrohashirama.online/";
-    public static String SERVER_NAME = "Ngọc Rồng Hashirama";
+    public static String DOMAIN = "http://localhost/";
+    public static String SERVER_NAME = "Bladekun";
     public static int EVENT_COUNT_THAN_HUY_DIET = 0;
     public static int EVENT_COUNT_QUY_LAO_KAME = 0;
     public static int EVENT_COUNT_THAN_MEO = 0;
@@ -104,10 +104,8 @@ public class Manager {
     public static int EVENT_COUNT_THAN_VU_TRU = 0;
     public static String loginHost;
     public static int loginPort;
-    public static int apiPort = 8080;
     public static int bossGroup = 5;
     public static int workerGroup = 10;
-    public static String apiKey = "abcdef";
     public static String executeCommand;
     public static boolean debug;
     public static String NgayRunServer;
@@ -1119,12 +1117,6 @@ public class Manager {
             debug = Boolean.parseBoolean(properties.getProperty("server.debug"));
         } else {
             debug = false;
-        }
-        if ((value = properties.get("api.key")) != null) {
-            Manager.apiKey = String.valueOf(value);
-        }
-        if ((value = properties.get("api.port")) != null) {
-            Manager.apiPort = Integer.parseInt(String.valueOf(value));
         }
         String linkServer = "";
         for (int i = 1; i <= 10; i++) {
